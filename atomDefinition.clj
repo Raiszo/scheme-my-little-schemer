@@ -8,10 +8,10 @@
 
 (def atom?
   (fn [x]
-   (not (seq? x))))
+    (not (seq? x))))
 
 (def null?
   (fn [x]
     (or
-      (nil? x)
-      ( = '() x))))
+     (nil? x)
+     (= '() x))))
