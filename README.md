@@ -5,7 +5,7 @@
 
 ## About
 
-This repo tries to follow the [clojure style guide](https://github.com/bbatsov/clojure-style-guide).
+This repo tries to follow [this clojure style guide](https://github.com/bbatsov/clojure-style-guide).
 
 
 ```clojure
@@ -19,5 +19,11 @@ This repo tries to follow the [clojure style guide](https://github.com/bbatsov/c
     (nil? x)
     (= '() x))))
 ```
+
+[Jorge Miranda](peppa-peddler.github.io)
+Ebert Choquehuanca
+
+Find the book
+[here](https://www.amazon.com/Little-Schemer-Daniel-P-Friedman/dp/0262560992/ref=sr_1_1?ie=UTF8&qid=1473739422&sr=8-1&keywords=little+schemer)
 
 ![cover](/img/readimg.jpg)
