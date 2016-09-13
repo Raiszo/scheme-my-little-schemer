@@ -20,7 +20,7 @@ This repo tries to follow [this clojure style guide](https://github.com/bbatsov/
     (= '() x))))
 ```
 
-[Jorge Miranda](peppa-peddler.github.io), 
+[Jorge Miranda](https://peppa-peddler.github.io/), 
 Ebert Choquehuanca
 
 Find the book
