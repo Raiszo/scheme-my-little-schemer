@@ -1,11 +1,11 @@
-# The little schemer
+#The little schemer
 
-> While the good citizen rests his feets at home,
-> the brave warrior stands at the battleground willing to learn some Lisp
+> While a decent citizen rests his feets at home,
+> a brave warrior stands at the battleground willing to learn some Lisp
 
 ## About
 
-This repo tries to follow [this clojure style guide](https://github.com/bbatsov/clojure-style-guide).
+This repo tries to follow [the clojure style guide](https://github.com/bbatsov/clojure-style-guide).
 
 
 ```clojure
