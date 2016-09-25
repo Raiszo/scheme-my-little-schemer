@@ -19,9 +19,23 @@ This repo tries to follow [the clojure style guide](https://github.com/bbatsov/c
     (nil? x)
     (= '() x))))
 ```
+### The First Commandment
+This commandment is about use a base case when defining a recursion, which is basically:
+> When recurring on an element ask wether it is null or not.
 
-[Jorge Miranda](https://peppa-peddler.github.io/), 
-Ebert Choquehuanca
+```clojure
+(if (empty? lat)
+  '()
+  ...)
+```
+
+However the equivalence in clojure for sequences may be using seq and when:
+
+```clojure
+;If lat is not seq then is an empty list, when the condition is false when
+returns 'nil' which is equivalent to and empty string
+(when (seq lat) ...)
+```
 
 Find the book
 [here](https://www.amazon.com/Little-Schemer-Daniel-P-Friedman/dp/0262560992/ref=sr_1_1?ie=UTF8&qid=1473739422&sr=8-1&keywords=little+schemer)
