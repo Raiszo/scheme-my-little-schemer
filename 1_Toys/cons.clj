@@ -1,6 +1,5 @@
-; There is some misconception about
-; the constructors in the data
-; collections.
+; There is some misconception
+; about the cons vs conj
 ;
 ; To summarize, here is a little
 ; statement writen by a guy named
