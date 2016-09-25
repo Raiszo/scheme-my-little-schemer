@@ -32,7 +32,9 @@ This commandment is about the use of a 'base case' when defining a recursion, wh
 However the equivalence in clojure for sequences may be using `seq` and `when`:
 
 ```clojure
-;If lat is not 'seq' then is an empty list; 'when' the condition is false, 'when' returns 'nil' which is equivalent to and empty string.
+;If lat is not 'seq' then is an empty list;
+;'when' the condition is false, 'when' returns
+;'nil' which is equivalent to and empty string.
 (when (seq lat) ...)
 ```
 
