@@ -20,8 +20,10 @@ This repo tries to follow [the clojure style guide](https://github.com/bbatsov/c
     (= '() x))))
 ```
 ### The First Commandment
-This commandment is about the use of a 'base case' when defining a recursion, which is basically:
+The first commandment is about the use of a 'base case' when defining a recursion, which is basically:
 > When recurring on an element ask whether it is null or not.
+
+Example when the base case returns an empty list:
 
 ```clojure
 (if (empty? lat)
@@ -35,6 +37,7 @@ However the equivalence in clojure for sequences may be using `seq` and `when`:
 ;If lat is not 'seq' then is an empty list;
 ;'when' the condition is false, 'when' returns
 ;'nil' which is equivalent to and empty string.
+
 (when (seq lat) ...)
 ```
 
