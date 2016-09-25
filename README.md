@@ -35,12 +35,22 @@ However the equivalence in clojure for sequences may be using `seq` and `when`:
 
 ```clojure
 ;If lat is not 'seq' then is an empty list;
-;'when' the condition is false, 'when' returns
+;When the condition is false, 'when' returns
 ;'nil' which is equivalent to and empty string.
 
 (when (seq lat) ...)
 ```
 
+### The Second Commandment
+
+> Use cons to build lists
+
+For example in the [rember](3_ConsTheMagnificent/rember.clj) function, in the recursion call we build the new list
+using cons:
+
+```clojure
+(cons (first lst) (rember a (rest lst)))
+```
 Find the book
 [here](https://www.amazon.com/Little-Schemer-Daniel-P-Friedman/dp/0262560992/ref=sr_1_1?ie=UTF8&qid=1473739422&sr=8-1&keywords=little+schemer)
 
