@@ -52,7 +52,7 @@ Here it just point out the basic operation to build lists.
 > When building a list, describe the first typical element, and then cons it onto the natural recursion.
 
 For example in the [rember](3_ConsTheMagnificent/rember.clj) function, in the recursion call we build the new list
-using cons:
+using `cons`, also the head element for the list is the first element of lst:
 
 ```clojure
 (cons (first lst) (rember a (rest lst)))
