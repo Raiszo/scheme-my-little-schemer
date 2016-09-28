@@ -45,12 +45,31 @@ However the equivalence in clojure for sequences may be using `seq` and `when`:
 
 > Use cons to build lists
 
+Here it just point out the basic operation to build lists.
+
+### The Third Commandment
+
+> When building a list, describe the first typical element, and then cons it onto the natural recursion.
+
 For example in the [rember](3_ConsTheMagnificent/rember.clj) function, in the recursion call we build the new list
 using cons:
 
 ```clojure
 (cons (first lst) (rember a (rest lst)))
 ```
+
+### The Fourth Commandment
+
+>Always change at least one argument while recurring. It
+>must be changed to be closer to termination. The changing
+>argument must be tested in the termination condition:
+>when using cdr, test termination with null?
+
+For example when calling `(rest lst)` will eventually lead us to an empty list:
+```clojure
+(rember a (rest lst))
+```
+
 Find the book
 [here](https://www.amazon.com/Little-Schemer-Daniel-P-Friedman/dp/0262560992/ref=sr_1_1?ie=UTF8&qid=1473739422&sr=8-1&keywords=little+schemer)
 
