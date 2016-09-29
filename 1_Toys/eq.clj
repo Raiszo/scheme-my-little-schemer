@@ -3,4 +3,4 @@
 
 (def eq? =)
 
-; However we will keep the '=' function
+; However we will keep '='
