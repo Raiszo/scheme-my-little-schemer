@@ -31,7 +31,7 @@ Example when the base case returns an empty list:
   ...)
 ```
 
-However the equivalence in clojure for sequences may be using `seq` and `when`:
+However a more idiomatic equivalence in clojure when we need to return an empty list in the base case is using `seq` and `when`:
 
 ```clojure
 ;If lat is not 'seq' then is an empty list;
