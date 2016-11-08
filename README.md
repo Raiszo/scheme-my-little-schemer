@@ -31,7 +31,7 @@ Example when the base case returns an empty list:
   ...)
 ```
 
-However a more idiomatic equivalence in clojure when we need to return an empty list in the base case is using `seq` and `when`:
+However a more idiomatic equivalence in clojure is using `seq` and `when`:
 
 ```clojure
 ;If lat is not 'seq' then is an empty list;
@@ -39,6 +39,9 @@ However a more idiomatic equivalence in clojure when we need to return an empty 
 ;'nil' which is equivalent to and empty string.
 
 (when (seq lat) ...)
+
+;Only if we need to return a null element
+;in the base case
 ```
 
 ### The Second Commandment
