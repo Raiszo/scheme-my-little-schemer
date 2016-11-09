@@ -73,6 +73,20 @@ For example when calling `(rest lst)` will eventually lead us to an empty list:
 (rember a (rest lst))
 ```
 
+### The Fifth commandment
+
+>When building a value with +, always use 0 for the value of the
+>terminating line, for adding 0 does not change the value of an
+>addition.
+>When building a value with x, always use 1 for the value of the
+>terminating line, for multiplying by 1 does not change the value
+>of a multiplication.
+>When building a value with cons , always consider () for the value
+>of the terminating line. 
+
+This commandment talks about the use of the `identity element` of each
+operation as base case.
+
 Find the book
 [here](https://www.amazon.com/Little-Schemer-Daniel-P-Friedman/dp/0262560992/ref=sr_1_1?ie=UTF8&qid=1473739422&sr=8-1&keywords=little+schemer)
 
