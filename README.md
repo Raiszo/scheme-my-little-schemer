@@ -120,7 +120,7 @@ if (seq? aexp)
 > Use help functions to abstract from representations. 
 
 For example when calling the functions: `operator`, `fst_sub_aexp` and
-`snd_sub_exp`:
+`snd_sub_exp` in [value](6_Shadows/value-nexp.clj):
 
 ```clojure
 ((if (= (operator aexp) '+) + - ) (value' (fst_sub_exp aexp)) (value'
