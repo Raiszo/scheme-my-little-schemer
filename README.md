@@ -106,6 +106,27 @@ correctness
 (eq ..)
 ```
 
+### The Seventh Commandment
+>Recur on the subparts that are of the same nature:
+>On the sublists of a list; 
+>On the subexpressions of an arithmetic expression. 
+
+```clojure
+if (seq? aexp)
+    (and (numbered? (first aexp)) (numbered? (first (rest (rest aexp)))))
+```
+
+### The Eighth Commandment
+> Use help functions to abstract from representations. 
+
+For example when calling the functions: `operator`, `fst_sub_aexp` and
+`snd_sub_exp`:
+
+```clojure
+((if (= (operator aexp) '+) + - ) (value' (fst_sub_exp aexp)) (value'
+(snd_sub_exp aexp)))
+```
+
 Find the book
 [here](https://www.amazon.com/Little-Schemer-Daniel-P-Friedman/dp/0262560992/ref=sr_1_1?ie=UTF8&qid=1473739422&sr=8-1&keywords=little+schemer)
 
