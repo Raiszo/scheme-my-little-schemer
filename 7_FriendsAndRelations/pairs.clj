@@ -8,5 +8,7 @@
 
 (def fst #(first %))
 (def snd #(first (rest %)))
+(def thrd #(first (rest (rest %))))
+
 (defn build [s1 s2]
   (cons s1 (cons s2 '())))
